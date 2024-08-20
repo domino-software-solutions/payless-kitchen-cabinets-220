@@ -1,0 +1,171 @@
+.RemodelServices {
+  width: 100%;
+  padding: 4rem 0;
+  margin-top: -90px;
+  position: relative;
+  z-index: 4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+  color: white;
+}
+
+.RemodelServices h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 2rem;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 5%;
+}
+
+.service {
+  flex: 1;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.service h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.service p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.explore-btn {
+  background-color: #67B7E1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.explore-btn:hover {
+  background-color: #0ea5e9;
+}
+
+@media (max-width: 767px) {
+  .RemodelServices  {
+    padding: 2rem 0;
+    margin-top: 0; /* Remove negative margin for mobile */
+    clip-path: none;
+    
+  }
+
+  .RemodelServices h1 {
+    font-size: 1.25rem; 
+    color:white
+  }
+
+  .services-container {
+    margin: 0 3%; /* Slightly less margin on mobile */
+  }
+}
+@media (max-width: 414px) {
+  .RemodelServices  {
+    padding: 2rem 2rem;
+    margin-top: 0; /* Remove negative margin for mobile */
+    clip-path: none;
+    margin-right: 2rem;
+    
+  }
+
+  .RemodelServices h1 {
+    font-size:1.3rem; 
+    color:white;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 6%;
+      
+  }
+  
+
+  .services-container h2 {
+    margin: 0 3%; 
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .RemodelServices  {
+    padding: 2rem 2rem;
+    margin-top: 0; /* Remove negative margin for mobile */
+    clip-path: none;
+    margin-right: 2rem;
+    
+  }
+
+  /* .RemodelServices h1 {
+    font-size: x-large; 
+    color:white;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 2%;
+      
+  }
+     */
+  .RemodelServices h1 {
+    font-size:large; 
+    color:white;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 6%;
+      
+  }
+
+  .services-container h2 {
+    margin: 0 3%; 
+    text-align: center;
+  }
+}
+
+/* Your existing media query for larger screens remains unchanged */
+@media (min-width: 768px) {
+  .RemodelServices {
+    padding: 10rem 0;
+    color:white
+    
+  }
+
+
+
+  .RemodelServices h1 {
+    font-size: x-large;
+    
+  }
+
+  .services-container {
+    flex-direction: row;
+    margin: 0 10%;
+  }
+
+  .explore-btn {
+    width: auto;
+  }
+}

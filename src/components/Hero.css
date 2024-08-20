@@ -1,0 +1,279 @@
+.hero-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4rem 0 10rem;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.4) 20%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.8) 70%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+    z-index: 1;
+}
+
+.hero-angle {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    transform: skewY(3deg);
+    z-index: 2;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.hero .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color:white
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.hero .features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.hero .features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.hero .features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+.hero .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hero .stars {
+    color: #FFD700;
+    margin-right: 0.5rem;
+}
+
+.hero .score {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hero .badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .badges img {
+    height: 80px;
+    width: auto;
+}
+
+.hero .btn {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0099CC;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.50rem;
+        color:white;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero-angle {
+        height: 50px;
+    }
+
+    .hero .badges img {
+        height: 70px;
+    }
+    .hero-angle {
+    flex-direction: column;
+    margin: 0 5%;
+    
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    transform: skewY(3deg);
+    z-index: 2;
+}
+}
+@media screen and (max-width:430px) {
+    .hero h1 {
+        font-size: 1.50rem;
+        color:white;
+        text-align: center;
+        margin-right: 1.5rem;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero-angle {
+        height: 50px;
+    }
+
+    .hero .badges img {
+        height: 70px;
+    }
+    .hero-angle {
+    flex-direction: column;
+    margin: 0 5%;
+    
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    transform: skewY(3deg);
+    z-index: 2;
+}
+}
+@media screen and (max-width:414px) {
+    .hero h1 {
+        font-size: 1.5rem;
+        color:white;
+        text-align: center;
+        margin-right:2rem;
+        margin-left: 1rem;
+        margin-bottom: 25%;
+    }
+    /* .hero-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-top: -10%;
+} */
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero-angle {
+        height: 50px;
+    }
+
+    .hero .badges img {
+        height: 70px;
+    }
+    .hero-angle {
+    flex-direction: column;
+    margin: 0 5%;
+    
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    transform: skewY(3deg);
+    z-index: 2;
+}
+}
+
+
+@media screen and (max-width:390px) {
+    .hero h1 {
+        font-size: 1.50rem;
+        color:white;
+        text-align: center;
+        margin-right:2rem;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero-angle {
+        height: 50px;
+    }
+
+    .hero .badges img {
+        height: 70px;
+    }
+    .hero-angle {
+    flex-direction: column;
+    margin: 0 5%;
+    
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    transform: skewY(3deg);
+    z-index: 2;
+}
+}

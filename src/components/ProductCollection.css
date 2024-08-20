@@ -1,0 +1,138 @@
+.product-collection {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: white;
+  text-align: center;
+  
+}
+
+.product-collection h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #CC3052; /* Matches the red text in the screenshot */
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product {
+  flex: 1 1 30%;
+  max-width: 30%;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f8fafc; /* Matches the light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 40px; /* Adjust size based on the screenshot */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product h2 {
+  font-size: 1.50rem;
+  margin-bottom: 1rem;
+  color: #1f2937; 
+  text-align: center;
+}
+
+.product p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4b5563; /* Lighter gray color */
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0ea5e9;
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex: 1 1 100%;
+    max-width: 90%; 
+  }
+  .product-collection h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #CC3052; 
+  margin: 1rem;
+  
+  padding-bottom: 2rem;
+}
+  /* h1 {
+    font-size: 1.5rem;
+    max-width: 90%; 
+    padding-left: 2rem;
+    margin-left:2rem;
+    
+  } */
+  h2 {
+    font-size: 1.5rem;
+    max-width: 90%; 
+    text-align: center;
+   
+    
+  }
+}
+
+@media (max-width: 414px) {
+  .product {
+    flex: 1 1 100%;
+    max-width: 80%; 
+  }
+  h1 {
+    font-size: 1.5rem;
+    max-width: 90%; 
+    padding-left: .5rem;
+    margin-left:2rem;
+   
+    
+  }
+  h2 {
+    font-size: 1.5rem;
+    max-width: 90%; 
+    text-align: center;
+   
+    
+  }
+}
+
+@media (max-width: 430px) {
+  .product {
+    flex: 1 1 100%;
+    max-width: 80%; 
+  }
+  .product-collection h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #CC3052; 
+  margin: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+ 
+  h2 {
+    font-size: 1.5rem;
+    max-width: 90%; 
+    text-align: center;
+   
+    
+  }
+}
