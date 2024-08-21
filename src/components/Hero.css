@@ -185,6 +185,14 @@
         font-size: 2rem;
     }
 
+    .badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4rem;
+}
+
+
     .hero .badges img {
         height: 60px;
     }
