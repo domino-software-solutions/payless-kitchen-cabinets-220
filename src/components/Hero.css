@@ -215,27 +215,25 @@
 @media screen and (max-width: 320px) {
     .form-container {
         overflow: hidden;
-    
+        height: auto;
     }
 
     .iframe-wrapper {
         position: relative;
         width: 100%;
-        height: 100px; /* Adjust this value as needed */
+        height: 700px; /* Increased height to show more of the form */
         overflow: hidden;
         margin-left: 3.5%;
-
     }
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: -380px; /* Adjust this value to crop more or less from the top */
+        top: -380px; /* Adjust if needed to crop the top correctly */
         left: 0;
         width: 100%;
-        height: 1600px; /* Increase if needed to show full form */
+        height: 2000px; /* Increased height to include the full form */
         border: none;
         transform: scale(0.95);
         transform-origin: top left;
-        padding-bottom: 30rem;
     }
 }
