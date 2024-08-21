@@ -765,10 +765,10 @@ export const Hero = () => {
               <li>Same-Day Savings</li>
               <li>More Choices. More Care. More Value.</li>
             </ul>
-            <div className="rating">
+            {/* <div className="rating">
               <span className="stars">★★★★★</span>
               <span className="score">4.7</span>
-            </div>
+            </div> */}
             <div className="badges">
               <img src={badges} alt="Zero Interest" />
             </div>
