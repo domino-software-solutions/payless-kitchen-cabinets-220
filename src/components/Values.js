@@ -11,7 +11,7 @@ const Values = () => {
         </h2>
         <div className="values-list">
           <div className="value-item">
-            <CheckCircle2 className="check-icon" />
+            {/* <CheckCircle2 className="check-icon" /> */}
             <div className="value-content">
               <h3>Family Values</h3>
               <p>
@@ -24,7 +24,7 @@ const Values = () => {
             </div>
           </div>
           <div className="value-item">
-            <CheckCircle2 className="check-icon" />
+            {/* <CheckCircle2 className="check-icon" /> */}
             <div className="value-content">
               <h3>More than the Warranty</h3>
               <p>
@@ -37,7 +37,7 @@ const Values = () => {
             </div>
           </div>
           <div className="value-item">
-            <CheckCircle2 className="check-icon" />
+            {/* <CheckCircle2 className="check-icon" /> */}
             <div className="value-content">
               <h3>All Your Remodeling Needs</h3>
               <p>
