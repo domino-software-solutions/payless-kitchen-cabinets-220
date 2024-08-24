@@ -96,7 +96,7 @@
 
 .form-container {
     width: 45%;
-    height: 1100px;
+    height: 1140px;
     overflow: hidden;
     border-radius: 10px;
     background-color: transparent;
@@ -213,7 +213,7 @@
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: 0;
+        top: -520px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -247,5 +247,30 @@
         border: none;
         transform: scale(0.95);
         transform-origin: top left;
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .iframe-wrapper iframe {
+        top: -460px;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    .iframe-wrapper iframe {
+        top: -500px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .iframe-wrapper iframe {
+        top: -520px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .iframe-wrapper iframe {
+        top: -460px;
     }
 }
