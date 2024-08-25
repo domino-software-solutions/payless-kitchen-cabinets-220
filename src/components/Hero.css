@@ -25,14 +25,299 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        to left,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(0, 0, 0, 0.4) 20%,
-        rgba(0, 0, 0, 0.6) 40%,
-        rgba(0, 0, 0, 0.8) 70%,
-        rgba(0, 0, 0, 0.9) 100%
-    );
+    background: linear-gradient(to left,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.4) 20%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.8) 70%,
+            rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.hero .features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero .features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.hero .features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+.hero .badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .badges img {
+    height: 80px;
+    width: auto;
+}
+
+.form-container {
+    width: 45%;
+    height: 1140px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: -430px;
+    left: 0;
+    width: 100%;
+    height: 5050px;
+    border: none;
+    transform: scale(0.95);
+    transform-origin: 0 0;
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .content,
+    .form-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .badges img {
+        height: 60px;
+    }
+
+    .form-container {
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .iframe-wrapper.mobile-scroll {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .iframe-wrapper iframe {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        width: 100%;
+        height: 1800px;
+        border: none;
+        transform: scale(0.95);
+        transform-origin: top left;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .content,
+    .form-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .badges {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 4rem;
+    }
+
+
+    .hero .badges img {
+        height: 60px;
+    }
+
+    .form-container {
+        height: auto;
+        margin-top: 2rem;
+        overflow: visible;
+    }
+
+    .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 300%;
+        overflow: hidden;
+    }
+
+    .iframe-wrapper iframe {
+        position: absolute;
+        top: -520px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        transform: scale(1);
+        transform-origin: 0 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-container {
+        overflow: hidden;
+    }
+
+    .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        margin-left: 3.5%;
+        border-radius: .5%;
+    }
+
+    .iframe-wrapper iframe {
+        position: absolute;
+        top: -320px;
+        left: 0;
+        width: 100%;
+        height: 1800px;
+        border: none;
+        transform: scale(0.95);
+        transform-origin: top left;
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .iframe-wrapper iframe {
+        top: -460px;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    .iframe-wrapper iframe {
+        top: -500px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .iframe-wrapper iframe {
+        top: -520px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .iframe-wrapper iframe {
+        top: -450px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .iframe-wrapper iframe {
+        top: -450px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .iframe-wrapper iframe {
+        top: -520px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.hero-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 4rem 0 10rem;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.4) 20%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.8) 70%,
+            rgba(0, 0, 0, 0.9) 100%);
     z-index: 1;
 }
 
@@ -186,11 +471,11 @@
     }
 
     .badges {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    margin-left: 4rem;
-}
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 4rem;
+    }
 
 
     .hero .badges img {
@@ -271,6 +556,22 @@
 
 @media screen and (max-width: 430px) {
     .iframe-wrapper iframe {
-        top: -460px;
+        top: -450px;
+    }
+}
+
+
+@media screen and (max-width: 792px) {
+    .iframe-wrapper {
+        height: 1290px;
+    }
+    .iframe-wrapper iframe {
+        top: -510px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .iframe-wrapper iframe {
+        top: -520px;
     }
 }
