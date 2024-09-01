@@ -1,4 +1,4 @@
-.values-container {
+/* .values-container {
   background-image: 
     linear-gradient(to left, 
       #0c2b49 0%,
@@ -146,7 +146,6 @@ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     object-fit: cover;
   }
 
-  /* Remove any angle-related styles */
   .values-section {
     clip-path: none;
     transform: none;
@@ -218,7 +217,6 @@ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     object-fit: cover;
   }
 
-  /* Remove any angle-related styles */
   .values-section {
     clip-path: none;
     transform: none;
@@ -295,7 +293,6 @@ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     object-fit: cover;
   }
 
-  /* Remove any angle-related styles */
   .values-section {
     clip-path: none;
     transform: none;
@@ -356,6 +353,373 @@ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     padding: 0.3rem 0.6rem;
   }
 
+
+  .values-container {
+    background-image: 
+      linear-gradient(to left, 
+        #0c2b49 0%,
+        #0c2b49 45%,
+        rgba(12, 43, 73, 0.8) 55%,
+        rgba(12, 43, 73, 0.4) 65%,
+        rgba(12, 43, 73, 0) 75%
+      ),
+      url('../assets/ValuesBg.png');
+  }
+} */
+
+.values-container {
+  background-image: 
+    linear-gradient(to left, 
+      #0c2b49 0%,
+      #0c2b49 40%,
+      rgba(12, 43, 73, 0.8) 50%,
+      rgba(12, 43, 73, 0.4) 60%,
+      rgba(12, 43, 73, 0) 70%
+    ),
+    url('../assets/ValuesBg.png');
+  background-size: cover;
+  background-position: center left;
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);  
+}
+
+.values-content {
+  max-width: 37.5rem; /* 600px */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 1rem;
+  margin-right: 8%;
+}
+
+.values-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  color: #fbbf24;
+  width: 0.875rem; /* 14px */
+  height: 0.875rem; /* 14px */
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.value-content h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.value-content p {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.highlight {
+  color: #fbbf24;
+}
+
+.contact-button {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0ea5e9;
+}
+
+@media (max-width: 48rem) { /* 768px */
+  .values-container {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    clip-path: none;
+    background-image: 
+      linear-gradient(to left, 
+        #0c2b49 0%,
+        #0c2b49 40%,
+        rgba(12, 43, 73, 0.8) 80%,
+        rgba(12, 43, 73, 0.4) 100%,
+        rgba(12, 43, 73, 0) 100%
+      ),
+      url('../assets/ValuesBg.png');
+  }
+
+  .check-icon {
+    color: transparent;
+    width: 0.875rem; /* 14px */
+    height: 0.875rem; /* 14px */
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .values-content {
+    width: 90%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .values-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .values-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .values-image {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: auto;
+    max-height: 18.75rem; /* 300px */
+    object-fit: cover;
+  }
+
+  /* Remove any angle-related styles */
+  .values-section {
+    clip-path: none;
+    transform: none;
+  }
+
+  .values-section::before,
+  .values-section::after {
+    display: none;
+  }
+}
+
+@media (max-width: 25.875rem) { /* 414px */
+  .values-container {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    clip-path: none;
+    background-image: 
+      linear-gradient(to left, 
+        #0c2b49 0%,
+        #0c2b49 40%,
+        rgba(12, 43, 73, 0.8) 80%,
+        rgba(12, 43, 73, 0.4) 100%,
+        rgba(12, 43, 73, 0) 100%
+      ),
+      url('../assets/ValuesBg.png');
+  }
+
+  .check-icon {
+    color: transparent;
+    width: 0.875rem; /* 14px */
+    height: 0.875rem; /* 14px */
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .value-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 5%;
+  }
+
+  .values-content {
+    width: 90%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .values-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .values-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .values-image {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: auto;
+    max-height: 18.75rem; /* 300px */
+    object-fit: cover;
+  }
+
+  /* Remove any angle-related styles */
+  .values-section {
+    clip-path: none;
+    transform: none;
+  }
+
+  .values-section::before,
+  .values-section::after {
+    display: none;
+  }
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+@media (max-width: 26.875rem) { /* 430px */
+  .values-container {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    clip-path: none;
+    background-image: 
+      linear-gradient(to left, 
+        #0c2b49 0%,
+        #0c2b49 40%,
+        rgba(12, 43, 73, 0.8) 80%,
+        rgba(12, 43, 73, 0.4) 100%,
+        rgba(12, 43, 73, 0) 100%
+      ),
+      url('../assets/ValuesBg.png');
+  }
+
+  .check-icon {
+    color: transparent;
+    width: 0.875rem; /* 14px */
+    height: 0.875rem; /* 14px */
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .values-content {
+    width: 90%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .values-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .values-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .values-image {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: auto;
+    max-height: 18.75rem; /* 300px */
+    object-fit: cover;
+  }
+
+  /* Remove any angle-related styles */
+  .values-section {
+    clip-path: none;
+    transform: none;
+  }
+
+  .values-section::before,
+  .values-section::after {
+    display: none;
+  }
+}
+
+@media (min-width: 48.0625rem) and (max-width: 60.9375rem) { /* 769px to 975px */
+  .values-container {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 60vh;
+  }
+
+  .values-content {
+    width: 55%;
+    max-width: none;
+    margin-right: 2%;
+    padding-right: 0;
+  }
+
+  .values-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    line-height: 1.3;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .values-list {
+    align-items: flex-start;
+  }
+
+  .value-item {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+
+  .value-content h3 {
+    font-size: 0.85rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .value-content p {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  .contact-button {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
   /* Adjust background gradient to ensure content visibility */
   .values-container {
     background-image: 
@@ -365,6 +729,73 @@ clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
         rgba(12, 43, 73, 0.8) 55%,
         rgba(12, 43, 73, 0.4) 65%,
         rgba(12, 43, 73, 0) 75%
+      ),
+      url('../assets/ValuesBg.png');
+  }
+}
+
+@media (max-width: 72rem) { /* MacBook Air 13" at 125% zoom (1152px) */
+  .values-container {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    min-height: 55vh;
+  }
+
+  .values-content {
+    width: 50%;
+    max-width: 34.375rem; /* 550px */
+    margin-right: 4%;
+    padding-right: 0;
+  }
+
+  .values-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .values-list {
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .value-item {
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+
+  .check-icon {
+    width: 1rem; /* 16px */
+    height: 1rem; /* 16px */
+    margin-top: 0.15rem;
+  }
+
+  .value-content h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .value-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .contact-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+
+  /* Adjust background gradient */
+  .values-container {
+    background-image: 
+      linear-gradient(to left, 
+        #0c2b49 0%,
+        #0c2b49 42%,
+        rgba(12, 43, 73, 0.8) 52%,
+        rgba(12, 43, 73, 0.4) 62%,
+        rgba(12, 43, 73, 0) 72%
       ),
       url('../assets/ValuesBg.png');
   }

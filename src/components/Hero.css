@@ -1,292 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-.hero-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 4rem 0 10rem;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to left,
-            rgba(0, 0, 0, 0.1) 0%,
-            rgba(0, 0, 0, 0.4) 20%,
-            rgba(0, 0, 0, 0.6) 40%,
-            rgba(0, 0, 0, 0.8) 70%,
-            rgba(0, 0, 0, 0.9) 100%);
-    z-index: 1;
-}
-
-.hero .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0%;
-}
-
-.hero .content {
-    max-width: 50%;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.hero .features {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
-}
-
-.hero .features li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-    line-height: 1.4;
-}
-
-.hero .features li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-}
-
-.hero .badges {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero .badges img {
-    height: 80px;
-    width: auto;
-}
-
-.form-container {
-    width: 45%;
-    height: 1140px;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-.iframe-wrapper {
-    width: 100%;
-    height: 200%;
-    overflow: hidden;
-    position: relative;
-}
-
-.iframe-wrapper iframe {
-    position: absolute;
-    top: -430px;
-    left: 0;
-    width: 100%;
-    height: 5050px;
-    border: none;
-    transform: scale(0.95);
-    transform-origin: 0 0;
-    padding-left: 5%;
-}
-
-@media screen and (max-width: 768px) {
-    .hero .container {
-        flex-direction: column;
-    }
-
-    .hero .content,
-    .form-container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero .badges img {
-        height: 60px;
-    }
-
-    .form-container {
-        height: auto;
-        margin-top: 2rem;
-    }
-
-    .iframe-wrapper {
-        position: relative;
-        width: 100%;
-        height: 800px;
-        overflow: hidden;
-    }
-
-    .iframe-wrapper.mobile-scroll {
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .iframe-wrapper iframe {
-        position: absolute;
-        top: -400px;
-        left: 0;
-        width: 100%;
-        height: 1800px;
-        border: none;
-        transform: scale(0.95);
-        transform-origin: top left;
-        padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .hero .container {
-        flex-direction: column;
-    }
-
-    .hero .content,
-    .form-container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .badges {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-        margin-left: 4rem;
-    }
-
-
-    .hero .badges img {
-        height: 60px;
-    }
-
-    .form-container {
-        height: auto;
-        margin-top: 2rem;
-        overflow: visible;
-    }
-
-    .iframe-wrapper {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 300%;
-        overflow: hidden;
-    }
-
-    .iframe-wrapper iframe {
-        position: absolute;
-        top: -520px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        transform: scale(1);
-        transform-origin: 0 0;
-        padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .form-container {
-        overflow: hidden;
-    }
-
-    .iframe-wrapper {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        margin-left: 3.5%;
-        border-radius: .5%;
-    }
-
-    .iframe-wrapper iframe {
-        position: absolute;
-        top: -320px;
-        left: 0;
-        width: 100%;
-        height: 1800px;
-        border: none;
-        transform: scale(0.95);
-        transform-origin: top left;
-    }
-}
-
-
-@media screen and (max-width: 970px) {
-    .iframe-wrapper iframe {
-        top: -460px;
-    }
-}
-
-@media screen and (max-width: 916px) {
-    .iframe-wrapper iframe {
-        top: -500px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .iframe-wrapper iframe {
-        top: -520px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .iframe-wrapper iframe {
-        top: -450px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .iframe-wrapper iframe {
-        top: -450px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .iframe-wrapper iframe {
-        top: -520px;
-    }
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+html {
+    font-size: 16px; /* Base font size for rem calculations */
+}
+
 .hero-wrapper {
     position: relative;
     overflow: hidden;
@@ -322,7 +39,7 @@
 }
 
 .hero .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 2rem;
     position: relative;
@@ -375,15 +92,15 @@
 }
 
 .hero .badges img {
-    height: 80px;
+    height: 5rem;
     width: auto;
 }
 
 .form-container {
     width: 45%;
-    height: 1140px;
+    height: 71.25rem;
     overflow: hidden;
-    border-radius: 10px;
+    /* border-radius: 0.625rem; */
     background-color: transparent;
 }
 
@@ -396,19 +113,20 @@
 
 .iframe-wrapper iframe {
     position: absolute;
-    top: -430px;
+    top: -26.875rem;
     left: 0;
     width: 100%;
-    height: 5050px;
+    height: 315.625rem;
     border: none;
     transform: scale(0.95);
     transform-origin: 0 0;
     padding-left: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
     .hero .container {
         flex-direction: column;
+        height: 88rem;
     }
 
     .hero .content,
@@ -422,7 +140,7 @@
     }
 
     .hero .badges img {
-        height: 60px;
+        height: 3.75rem;
     }
 
     .form-container {
@@ -433,7 +151,7 @@
     .iframe-wrapper {
         position: relative;
         width: 100%;
-        height: 600px;
+        height: 37.5rem;
         overflow: hidden;
     }
 
@@ -444,18 +162,20 @@
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: -380px;
-        left: 0;
-        width: 100%;
-        height: 1600px;
+        top: -23.75rem;
+        /* -380px */
+        left: 2rem;
+        width: 86%;
+        height: 75rem;
+        /* 1600px */
         border: none;
-        transform: scale(0.95);
+        transform: scale(1.12);
         transform-origin: top left;
         padding-left: 0;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 25.875rem) {
     .hero .container {
         flex-direction: column;
     }
@@ -477,39 +197,38 @@
         margin-left: 4rem;
     }
 
-
     .hero .badges img {
-        height: 60px;
+        height: 3.75rem;
     }
 
     .form-container {
         height: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
         overflow: visible;
     }
 
     .iframe-wrapper {
         position: relative;
         width: 100%;
-        height: 0;
+        height: 10rem;
         padding-bottom: 300%;
         overflow: hidden;
     }
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: -520px;
+        top: -34.5rem;
         left: 50%;
         transform: translateX(-50%) scale(1);
         width: 100%;
-        height: 100%;
+        height: 110%;
         border: none;
         transform-origin: top center;
         padding-left: 0;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20rem) {
     .form-container {
         overflow: hidden;
     }
@@ -517,44 +236,47 @@
     .iframe-wrapper {
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 31.25rem;
         overflow: hidden;
         margin-left: 3.5%;
-        border-radius: .5%;
+        border-radius: 0.5%;
     }
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: -320px;
+        top: -20rem;
         left: 0;
         width: 100%;
-        height: 1800px;
+        height: 112.5rem;
         border: none;
         transform: scale(0.95);
         transform-origin: top left;
     }
 }
 
-
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 60.625rem) {
     .iframe-wrapper iframe {
-        top: -460px;
+        top: -28.75rem;
     }
 }
 
-@media screen and (max-width: 916px) {
+@media screen and (max-width: 57.25rem) {
     .iframe-wrapper iframe {
-        top: -500px;
+        top: -31.25rem;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 48.75rem) {
+    .form-container {
+        height: 80rem;
+    }
     .iframe-wrapper iframe {
-        top: -520px;
+        top: -34.5rem;
+        height: 112rem;
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 26.875rem) {
     .hero .container {
         padding-top: 1rem;
     }
@@ -565,24 +287,24 @@
     }
 
     .form-container {
-        height: auto;
+        height: 105rem;
         overflow: visible;
     }
 
     .iframe-wrapper {
         position: relative;
         width: 100%;
-        height: 700px;
+        height: 46.75rem;
         overflow: hidden;
     }
 
     .iframe-wrapper iframe {
         position: absolute;
-        top: -400px;
+        top: -30rem;
         left: 50%;
-        transform: translateX(-50%) scale(0.95);
+        transform: translateX(-50%) scale(1.06);
         width: 99%;
-        height: 1760px;
+        height: 108rem;
         border: none;
         transform-origin: top center;
         padding-left: 0;
@@ -601,43 +323,109 @@
     }
 }
 
-@media screen and (max-width: 792px) {
+@media screen and (max-width: 49.5rem) {
     .iframe-wrapper {
-        height: 1290px;
+        height: 80.625rem;
     }
 
     .iframe-wrapper iframe {
-        top: -510px;
+        top: -31.875rem;
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 24.375rem) {
     .iframe-wrapper iframe {
-        top: -510px;
+        top: -32.875rem;
         left: 50%;
-        transform: translateX(-50%) scale(0.95);
+        transform: translateX(-50%) scale(1.06);
         width: 100%;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 23.4375rem) {
     .iframe-wrapper iframe {
-        top: -520px;
+        top: -35.5rem;
         left: 50%;
-        transform: translateX(-50%) scale(0.95);
+        transform: translateX(-50%) scale(1.05);
         width: 100%;
+    }
+    .form-container {
+        height: 115rem;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20rem) {
     .iframe-wrapper {
         margin-left: 0;
     }
 
     .iframe-wrapper iframe {
-        top: -320px;
+        top: -20rem;
         left: 50%;
         transform: translateX(-50%) scale(0.95);
         width: 100%;
     }
 }
+
+@media screen and (max-width: 47.5625rem) {
+    .hero .container {
+        height: 108rem;
+    }
+}
+
+@media screen and (max-width: 42.9375rem) {
+    .hero .container {
+        height: 109rem;
+    }
+}
+
+@media screen and (max-width: 40.75rem) {
+    .hero .container {
+        height: 112rem;
+    }
+}
+
+@media screen and (max-width: 40.0625rem) {
+    .hero .container {
+        height: 115rem;
+    }
+}
+
+@media screen and (max-width: 37.9375rem) {
+    .hero .container {
+        height: 118rem;
+    }
+    .iframe-wrapper iframe {
+        top: -34rem;
+    }
+}
+
+@media screen and (max-width: 32.125rem) {
+    .hero .container {
+        height: 120rem;
+    }
+    .iframe-wrapper iframe {
+        top: -36rem;
+    }
+}
+
+@media screen and (max-width: 30.4375rem) {
+    .hero .container {
+        height: 120rem;
+    }
+    .iframe-wrapper iframe {
+        top: -32rem;
+        left: 50%;
+        transform: translateX(-50%) scale(1.06);
+        width: 90%;
+    }
+}
+
+/* @media screen and (max-width: 29.25rem) {
+    .hero .container {
+        height: 118rem;
+    }
+    .iframe-wrapper iframe {
+        top: -35rem;
+    }
+} */
