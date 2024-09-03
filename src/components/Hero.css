@@ -409,7 +409,7 @@ html {
     }
 }
 
-@media screen and (max-width: 30.4375rem) {
+/* @media screen and (max-width: 30.4375rem) {
     .hero .container {
         height: 120rem;
     }
@@ -419,7 +419,7 @@ html {
         transform: translateX(-50%) scale(1.06);
         width: 90%;
     }
-}
+} */
 
 /* @media screen and (max-width: 29.25rem) {
     .hero .container {
